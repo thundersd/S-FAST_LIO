@@ -94,7 +94,7 @@ void Preprocess::avia_handler(const livox_ros_driver::CustomMsg::ConstPtr &msg)
   pl_surf.clear();
   pl_corn.clear();
   pl_full.clear();
-  double t1 = omp_get_wtime();
+  double t1 = omp_get_wtime(); #omp_get_wtime计时
   int plsize = msg->point_num;
   // cout<<"plsie: "<<plsize<<endl;
 
