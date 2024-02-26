@@ -88,7 +88,7 @@ nav_msgs::Path path;
 nav_msgs::Odometry odomAftMapped;
 geometry_msgs::PoseStamped msg_body_pose;
 
-shared_ptr<Preprocess> p_pre(new Preprocess());
+shared_ptr<Preprocess> p_pre(new Preprocess()); #shared_ptr是C++标准库提供的智能指针
 
 void SigHandle(int sig)
 {
